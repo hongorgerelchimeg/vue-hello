@@ -9,8 +9,18 @@
 </head>
 <body>
     <div id="root">
+        <h1>{{message}}</h1>
+        <div class="image holder">
+            <img :src="image[0].link" :alt="image[0].alt">
+           
+            <img :src="image[1].link" :alt="image[1].alt">
+            <div class="input-holder">
+                <input v-model="name" type="text">
+                <button @click="greet">hello</button>
+            </div>
+        </div>
+       
 
-        
     </div>
 
 
